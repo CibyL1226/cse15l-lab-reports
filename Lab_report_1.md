@@ -10,7 +10,8 @@ The VScode should show up like this: ![Image](VSCode_ss.png)
 
 ## Remotely Connecting(for Mac users):
 **Step 1**: open a new terminal in VScode by clicking on "terminal" on the upper left corner of the screen
-
-**Step 2**: after opening a new terminal, type in `ssh cs15lsp23zz@ieng6.ucsd.edu` where the `zz` is replaced by your UCSD student account user name
+![Image](VSCode_ss.png)
+**Step 2**: After the "%" sign, type in `ssh cs15lsp23zz@ieng6.ucsd.edu` where the `zz` is replaced by your UCSD student account user name
 _ I am demostrating with my regualr account here, because the cs15l account is not working for me at this point_
+
 
