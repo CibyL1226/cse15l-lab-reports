@@ -22,7 +22,7 @@ This is the before:
 This is the after bug fix:
 ![image](fixed.png)
 
-Before fixing the bug, the method fitlered out all the lowest values when there is more than one duplicates of the lowest value in the input array. We fix the bug by summing up all the values from the array and only took out one of the lowest value. As you can see from the symptoms from the failure-induced input, the expected value is larger than the actual value. 
+Before fixing the bug, the method fitlered out all the lowest values when there is more than one duplicates of the lowest value in the input array. We fix the bug by summing up all the values from the array and only took out one of the lowest value using the `sum-=lowest` command. As you can see from the symptoms from the failure-induced input, the expected value is larger than the actual value. 
 
 
 ## Part III
