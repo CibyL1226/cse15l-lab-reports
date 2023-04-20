@@ -5,7 +5,8 @@ I will be demonstrating three steps to set up your computer/laptop environment t
 - Trying Some Commands
 
 ## Installing VScode:
-I did not perform this step because I have VScode downloaded in my laptop already, but if you have not install it. You can find it [here](https://code.visualstudio.com/)
+I did not perform this step because I have VScode downloaded in my laptop already, but if you have not install it. 
+You can find it [here](https://code.visualstudio.com/)
 The VScode should look like this: ![Image](VSCode_ss.png)
 
 ## Remotely Connecting(for Mac users):
