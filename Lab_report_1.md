@@ -5,7 +5,7 @@ I will be demonstrating three steps to set up your computer/laptop environment t
 - Trying Some Commands
 
 ## Installing VScode:
-I did not perform this step because I have VScode downloaded in my laptop already. 
+I did not perform this step because I have VScode downloaded in my laptop already, but if you have not install it. You can find it [here](https://code.visualstudio.com/)
 The VScode should look like this: ![Image](VSCode_ss.png)
 
 ## Remotely Connecting(for Mac users):
@@ -14,8 +14,9 @@ The VScode should look like this: ![Image](VSCode_ss.png)
 
 
 **Step 2**: After the "%" sign, type in `ssh cs15lsp23zz@ieng6.ucsd.edu` where the `zz` is replaced by your UCSD student account user name. (read **Step 3** before proceeding if connecting for the first time).
+You could find your CSE 15L specific student account [here](https://sdacs.ucsd.edu/~icc/index.php)
 The system will prompt you to enter your password. (It is normal to not see anything when you type, so type carefully)
-_ I am demostrating with my regualr account here, because the cs15l account is not working for me at this point_
+_ I am demostrating with my regualr account here, because the cs15l account is not working for me at this point _
 ![Image](ssh_username_ps.png)
 
 
