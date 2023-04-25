@@ -9,7 +9,7 @@ Here are the commands called to compile and run the server:
 
 Two screen shots using `/add-message`:
 ![image](StringServerHRU.png)
-This view of the web server is created by inputting `s=hello` then switch it out for `s=how are you` queries.
+This view of the web server is created by first using `s=hello` then switch it out for `s=how are you` queries.
 The methods called are`.getPath()` , `getQuery`, `handleRequest`, `.split`,and `.equals`in this case.
 The relevant arguements to those methods are `url` for both `getPath` and `getQuery`, `URI url` for the  `handleRequest` method, `=` (a character to split the string by) for the `.split` method, and last but not least `/add-message`, which is the input of the path as a string we needed to proceed with the output. The values of `URI url` changed from `\add-message?s=hello` to `\add-message?s=how are you` when calling the command to create this output. The runnignString field changed from `hello` to `"hello" + "\n" + "how are you"`.
 
