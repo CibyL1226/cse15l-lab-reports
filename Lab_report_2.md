@@ -12,7 +12,7 @@ Two screen shots using `/add-message`:
 For the `s=hello` query, these methods from the code were called: `.getPath()` , `getQuery`, `handleRequest`, `.split`,and `.equals`.
 The relevant arguements to those methods are `url` for both `getPath` and `getQuery`, `URI url` for the  `handleRequest` method, `=` (a character to split the string by) for the `.split` method, and last but not least `/add-message`, which is the input of the path as a string we needed to proceed with the output. The values of `URI url` changed from `\add-message?s=hello` to `\add-message?s=how are you` when calling the command to create this output.
 
-![image]()
+![image](StringServer404.png)
 
 
 Which methods in your code are called?
