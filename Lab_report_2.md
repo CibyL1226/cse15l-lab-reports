@@ -1,7 +1,24 @@
 # Lab Report 2
 
 ## Part I 
+Here is the code that builds a web server that contains a list of strings as the string in the query of the link changed:
+![image](StringServerCode.png)
 
+Here are the commands called to compile and run the server:
+![image](StringServerCommand.png)
+
+Two screen shots using `/add-message`:
+![image](StringServerHRU.png)
+For the `s=hello` query, these methods from the code were called: `.getPath()` , `getQuery`, `handleRequest`, `.split`,and `.equals`.
+The relevant arguements to those methods are `url` for both `getPath` and `getQuery`, `URI url` for the  `handleRequest` method, `=` (a character to split the string by) for the `.split` method, and last but not least `/add-message`, which is the input of the path as a string we needed to proceed with the output. The values of `URI url` changed from `\add-message?s=hello` to `\add-message?s=how are you` when calling the command to create this output.
+
+![image]()
+
+
+Which methods in your code are called?
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 456 is a value, new URI("http://...") is a value, and so on.)
 
 ## Part II
 
