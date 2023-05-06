@@ -4,7 +4,7 @@ The `grep` command is usually used to find out information about a certain strin
 
 ## First Method
 
-**`grep "<string>" <file_name>** to find and output all the sentences containing the string.
+**`grep " <string> " <file_name>** to find and output all the sentences containing the string.
 
 The **first example** shows all the sentences contianing the word "BMI" from the `1468-6708-3-1.txt` file from the biomed directory. The input includes the `grep` command and the string we are looking for as well as the file we are looking in.
 
