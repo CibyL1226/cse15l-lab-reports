@@ -123,7 +123,7 @@ This input is looking for the string "brain" and the output tells us that the wo
 
 **Second example**
 
-This input 
+This input looks for the author's last name `Annan` and returns how many times it has appeared in the text file `journal.pbio.0020001.txt`. The output shows that it showed up 7 times throughout the whole article.
 
 Input: `grep -c "Annan" journal.pbio.0020001.txt`
 
