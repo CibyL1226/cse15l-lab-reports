@@ -4,7 +4,7 @@ The `grep` command is usually used to find out information about a certain strin
 
 ## First Method
 
-**`grep "<String>" <file_name>`** to find and output all the sentences containing the string.(Found on ChatGPT) 
+**`grep "<String>" <file_name>`** to find and output all the sentences containing the string.(Found on [ChatGPT](https://chat.openai.com/)) 
 
 The **first example** shows all the sentences contianing the word "BMI" from the `1468-6708-3-1.txt` file from the biomed directory. The input includes the `grep` command and the string we are looking for as well as the file we are looking in.
 
@@ -54,7 +54,7 @@ This command looks for every sentence that contains the phrase "body mass index"
  
 ## Second Method
 
-Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively. (Found on ChatGPT)
+Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively. (Found on [ChatGPT](https://chat.openai.com/))
 
 **First example** looks for the string "takeoff" from every files in the same `911report` directory and return them.
  
@@ -86,7 +86,7 @@ This input looks for the phrase "important to" from the same `911report` directo
 
 ## Third Method
 
-This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on ChatGPT)
+This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on [ChatGPT](https://chat.openai.com/))
 
 **First example** 
 
@@ -111,7 +111,7 @@ This example uses the command to find all the lines with "time" at the end and o
 
 ## Fourth Method
 
-This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on ChatGPT)
+This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on [ChatGPT](https://chat.openai.com/))
 
 **Fist example**
 
