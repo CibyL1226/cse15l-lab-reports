@@ -1,11 +1,16 @@
 # Lab Report 3
 
-## First way to use `grep`:
+The `grep` command is usually used to find out information about a certain string from a large files with a lot of strings. Today I am showing you four different ways you can use `grep` to explore a directory and the files in it. 
 
-Using the files from biomed directory to find sentences containing the word "BMI"
-Input: `grep "BMI" 1468-6708-3-1.txt`
+## First Method
 
-Output:
+**`grep "<string>" <file_name>** to find and output all the sentences containing the string.
+
+The **first example** shows all the sentences contianing the word "BMI" from the `1468-6708-3-1.txt` file from the biomed directory. The input includes the `grep` command and the string we are looking for as well as the file we are looking in.
+
+*Input:* `grep "BMI" 1468-6708-3-1.txt`
+
+*Output:*
 `between body mass index (BMI) and mortality, controlling
         excess risk for persons with very low BMI, but that persons
         with moderately high BMI had little or no extra risk except
@@ -39,19 +44,23 @@ Output:
           et al proposed a desirable BMI of
         BMI Body mass index`
         
-Second input that looks for an entire phrase:
+**Second example**
 
-Input: `grep "body mass index" 1468-6708-3-1.txt`
+This command looks for every sentence that contains the phrase "body mass index". The input includes the `grep` command and the whole phrase follow by the text file name. 
 
-Output: `between body mass index (BMI) and mortality, controlling`
+*Input:* `grep "body mass index" 1468-6708-3-1.txt`
+
+*Output:* `between body mass index (BMI) and mortality, controlling`
  
-## Second way to use `grep`:
+## Second Method
 
 Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively:
- 
-Input: `grep -r "takeoff" ~/Documents/GitHub/docsearch/technical/911report`
 
-Output: 
+**First example** looks for the string "takeoff" from every files in the same `911report` directory and return them.
+ 
+*Input:* `grep -r "takeoff" ~/Documents/GitHub/docsearch/technical/911report`
+
+*Output:* 
 `/Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-13.2.txt:                after takeoff,"like someone keyed the mike and said everyone stay in your seats."
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-13.2.txt:                Deborah Welsh (first class, seat J1 at takeoff); Sandra Bradshaw (coach, seat J5);
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-13.2.txt:                93 would have allowed an observer into the cockpit before or after takeoff who had
@@ -64,7 +73,9 @@ Output:
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-7.txt:                flight but took no interest in takeoffs or landings. By the end of May 2000, Hazmi
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-7.txt:                to storm the cockpit would be about 10-15 minutes after takeoff, when the cockpit`
 
-Second example of using `-r` for recursion:
+**Second example**
+
+This input looks for the phrase "important to" from the same `911report` directory and return their path, text file names, and the sentence that contains the pharse.
 
 Input: `grep -r "important to" ~/Documents/GitHub/docsearch/technical/911report`
 
@@ -73,7 +84,9 @@ Output:
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-6.txt:                been built to coordinate counterterrorism policy. It was important to sound
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-9.txt:                disasters, it is important to integrate those taking 911 calls into the emergency`
 
-## Third method to use `grep`
+## Third Method
+
+
 
 Input: `grep -E "Air$" chapter-13.2.txt`
 
