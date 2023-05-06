@@ -1,6 +1,6 @@
 # Lab Report 3
 
-First Example:
+## First way to use `grep`:
 
 Using the files from biomed directory to find sentences containing the word "BMI"
 Input: `grep "BMI" 1468-6708-3-1.txt`
@@ -45,6 +45,8 @@ Input: `grep "body mass index" 1468-6708-3-1.txt`
 
 Output: `between body mass index (BMI) and mortality, controlling`
  
+## Second way to use `grep`:
+
 Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively:
  
 Input: `grep -r "takeoff" ~/Documents/GitHub/docsearch/technical/911report`
@@ -61,3 +63,45 @@ Output:
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-5.txt:                flights in Southeast Asia. KSM told them to watch the cabin doors at takeoff and
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-7.txt:                flight but took no interest in takeoffs or landings. By the end of May 2000, Hazmi
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-7.txt:                to storm the cockpit would be about 10-15 minutes after takeoff, when the cockpit`
+
+Second example of using `-r` for recursion:
+
+Input: `grep -r "important to" ~/Documents/GitHub/docsearch/technical/911report`
+
+Output: 
+`/Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-6.txt:                Qaeda's image was very important to Bin Ladin, and the video was widely
+/Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-6.txt:                been built to coordinate counterterrorism policy. It was important to sound
+/Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-9.txt:                disasters, it is important to integrate those taking 911 calls into the emergency`
+
+## Third method to use `grep`
+
+Input: `grep -E "Air$" chapter-13.2.txt`
+
+Output: `Accounting Office; INS-Immigration and Naturalization Service; NEADS-Northeast Air
+            7. See Air Transport Association/Regional Airlines Association (ATA/RAA) report, "Air
+                interview (Nov. 19, 2003). On standard emergency training, see FAA report, "Air
+                accordance with the Air Carrier Standard Security program. See FAA report,"Air
+                77," Feb. 19, 2002. On events in the cabin, see FAA recording, Indianapolis Air
+                derived by the Commission from files provided by the FAA and the Northeast Air`
+    
+Second example:
+Input: `grep -E "time$" chapter-10.txt`
+
+Output: `While the plan at the elementary school had been to return to Washington, by the time`
+
+## Fourth method to use `grep`
+
+Fist example:
+
+Input: `grep -c "brain" pmed.0020060.txt`
+
+Ouput : `9`
+
+Second example:
+
+Input: `grep -c "Annan" journal.pbio.0020001.txt`
+
+Output: `7`
+
+
+
