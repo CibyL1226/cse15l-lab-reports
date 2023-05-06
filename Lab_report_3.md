@@ -4,7 +4,7 @@ The `grep` command is usually used to find out information about a certain strin
 
 ## First Method
 
-**`grep "<String>" <file_name>`** to find and output all the sentences containing the string.
+**`grep "<String>" <file_name>`** to find and output all the sentences containing the string.(Found on ChatGPT) 
 
 The **first example** shows all the sentences contianing the word "BMI" from the `1468-6708-3-1.txt` file from the biomed directory. The input includes the `grep` command and the string we are looking for as well as the file we are looking in.
 
@@ -54,7 +54,7 @@ This command looks for every sentence that contains the phrase "body mass index"
  
 ## Second Method
 
-Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively:
+Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively. (Found on ChatGPT)
 
 **First example** looks for the string "takeoff" from every files in the same `911report` directory and return them.
  
@@ -77,40 +77,53 @@ Another way to use incorporate the `grep` command is to use the `-r` command aft
 
 This input looks for the phrase "important to" from the same `911report` directory and return their path, text file names, and the sentence that contains the pharse.
 
-Input: `grep -r "important to" ~/Documents/GitHub/docsearch/technical/911report`
+*Input:* `grep -r "important to" ~/Documents/GitHub/docsearch/technical/911report`
 
-Output: 
+*Output:* 
 `/Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-6.txt:                Qaeda's image was very important to Bin Ladin, and the video was widely
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-6.txt:                been built to coordinate counterterrorism policy. It was important to sound
 /Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-9.txt:                disasters, it is important to integrate those taking 911 calls into the emergency`
 
 ## Third Method
 
+This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on ChatGPT)
 
+**First example** 
 
-Input: `grep -E "Air$" chapter-13.2.txt`
+The command has a `$` at the end of the string indicating that it is looking for sentences with the word "Air" at the end of the line. To look for lines with the word "Air" in the beginning of the sentence, we need to us a `^` at the beginning of the string. 
 
-Output: `Accounting Office; INS-Immigration and Naturalization Service; NEADS-Northeast Air
+*Input:* `grep -E "Air$" chapter-13.2.txt`
+
+*Output:* `Accounting Office; INS-Immigration and Naturalization Service; NEADS-Northeast Air
             7. See Air Transport Association/Regional Airlines Association (ATA/RAA) report, "Air
                 interview (Nov. 19, 2003). On standard emergency training, see FAA report, "Air
                 accordance with the Air Carrier Standard Security program. See FAA report,"Air
                 77," Feb. 19, 2002. On events in the cabin, see FAA recording, Indianapolis Air
                 derived by the Commission from files provided by the FAA and the Northeast Air`
     
-Second example:
-Input: `grep -E "time$" chapter-10.txt`
+**Second example**
 
-Output: `While the plan at the elementary school had been to return to Washington, by the time`
+This example uses the command to find all the lines with "time" at the end and one line out of the whole `chapter-10.txt` file was returned. 
 
-## Fourth method to use `grep`
+*Input:* `grep -E "time$" chapter-10.txt`
 
-Fist example:
+*Output:* `While the plan at the elementary school had been to return to Washington, by the time`
 
-Input: `grep -c "brain" pmed.0020060.txt`
+## Fourth Method
 
-Ouput : `9`
+This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on ChatGPT)
 
-Second example:
+**Fist example**
+
+This input is looking for the string "brain" and the output tells us that the word appeared 9 times in the `pmed.0020060.txt` text file.
+
+*Input:* `grep -c "brain" pmed.0020060.txt`
+
+*Ouput:* `9`
+
+**Second example**
+
+This input 
 
 Input: `grep -c "Annan" journal.pbio.0020001.txt`
 
