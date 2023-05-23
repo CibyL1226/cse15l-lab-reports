@@ -1,68 +1,42 @@
 # Lab Report 3
 
-The `grep` command is usually used to find out information about a certain string from a large files with a lot of strings. Today I am showing you four different ways you can use `grep` to explore a directory and the files in it. 
+The `grep ` command is usually used to find out information about a certain string from a large files with a lot of strings. Today I am showing you four different ways you can use `grep` to explore a directory and the files in it. 
 
 ## First Method
 
-**`grep "<String>" <file_name>`** to find and output all the sentences containing the string.(Found on [ChatGPT](https://chat.openai.com/))
+**`grep -w <word> <file.txt>`** to find and output all the sentences containing the whole word instead of parts of the word.(Found on [ChatGPT](https://chat.openai.com/))
 
-The input I put in chatGPT is "what are some ways to use grep function??"
-The output I got for this command is 
 
-**First example** shows all the sentences contianing the word "BMI" from the `1468-6708-3-1.txt` file from the biomed directory. The input includes the `grep` command and the string we are looking for as well as the file we are looking in.
+_The input I put in chatGPT is "what are some ways to use grep function??"_
+The output I got for this specific command from chatGPT says: "Search for whole word matches (using -w option):
+`grep -w word file.txt`
+The -w option ensures that the pattern is matched only as a whole word, ignoring partial matches within larger words."_
 
-This commmand is useful when you wanted to find information using a keyword or find quotes with a certain word.  
+**First example** shows all the sentences contianing the word "recall" from the `chapter-1.txt` file from the 911report directory. The input includes the `grep -w` command and the string we are looking for as well as the file we are looking in.
 
-*Input:* `grep "BMI" 1468-6708-3-1.txt`
+This commmand is useful when you wanted to find information using a keyword or find quotes with a certain word, but you also wanted to eliminate other words that contains the word your looking for and make sure the return sentences contians exactly the word you're looking for.  
+
+*Input:* `grep -w recall chapter-1.txt`
 
 *Output:*
-`between body mass index (BMI) and mortality, controlling
-        excess risk for persons with very low BMI, but that persons
-        with moderately high BMI had little or no extra risk except
-        because few studies have examined the relation of BMI to
-        events [ 10 ] . In this paper we study whether BMI at
-          BMI was calculated as measured weight in kilograms
-          BMI of 18.5 to 24.9; overweight as 25 to 29.9; and
-          separately the group with BMI between 18.5 and 20, which
-          with BMI. To adjust for possible confounding we chose
-          and likely to be related to BMI. Self-reported covariates
-          plotted mean adjusted YOL and YHL against BMI, and tested
-          for difference among BMI groups using confidence
-          the effect size for each measure, comparing each BMI
-        smokers. Black women had a higher mean BMI and higher
-        percent obese (BMI ≥ 30) than the other three groups. Black
-        statistically significant (p <.05) except for BMI and
-        significant differences between black and white for BMI,
-        the difference in BMI was no longer statistically
-        significantly on BMI, BMI>30, weight loss since age 50,
-        We next examined the relationship of BMI to YOL and YHL.
-        BMI below 18.5, but averaged 6.6 years for women with a BMI
-        only discrepancy is for men with BMI < 18.5, a category
-        with BMI from 18.5 to 20 would be considered 'normal' by
-        increase sample size for those with low BMI, we combined
-        the two lower categories, defining underweight as a BMI
-        BMI. For each BMI category the mean and its 95% confidence
-        between BMI and YOL for BMI above 20. Underweight women
-        normal group. The relationship of BMI to YHL for men is
-        similar, but differences among BMI groups were not
-        to the normal BMI group. The effect sizes are shown in
-          et al proposed a desirable BMI of
-        BMI Body mass index`
+` When the local civil aviation security office of the Federal Aviation Administration (FAA) later investigated these security screening operations, the screeners recalled nothing out of the ordinary. They could not recall that any of the passengers they screened were CAPPS selectees. We asked a screening expert to review the videotape of the hand-wanding, and he found the quality of the screener's work to have been "marginal at best." The screener should have "resolved" what set off the alarm; and in the case of both Moqed and Hazmi, it was clear that he did not.
+    In most cases, the chain of command authorizing the use of force runs from the president to the secretary of defense and from the secretary to the combatant commander. The President apparently spoke to Secretary Rumsfeld for the first time that morning shortly after 10:00. No one can recall the content of this conversation, but it was a brief call in which the subject of shootdown authority was not discussed.`
         
 **Second example**
 
-This command looks for every sentence that contains the phrase "body mass index". The input includes the `grep` command and the whole phrase follow by the text file name. 
+This command looks for every sentence that contains the word "unlikely" but not "likely". The input includes the `grep -w` command and the whole phrase follow by the text file name. 
 
-*Input:* `grep "body mass index" 1468-6708-3-1.txt`
+*Input:* `grep -w unlikely chapter-1.txt`
 
-*Output:* `between body mass index (BMI) and mortality, controlling`
+*Output:* `Third, NEADS needed orders to pass to the pilots. At 10:10, the pilots over Washington were emphatically told, "negative clearance to shoot." Shootdown authority was first communicated to NEADS at 10:31. It is possible that NORAD commanders would have ordered a shootdown in the absence of the authorization communicated by the Vice President, but given the gravity of the decision to shoot down a commercial airliner, and NORAD's caution that a mistake not be made, we view this possibility as unlikely.`
  
 ## Second Method
 
 Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively. (Found on [ChatGPT](https://chat.openai.com/))
 
-The input I put in chatGPT is "what are some ways to use grep function?"
-The output I got for this specific function from chatGPT says: "Search recursively in directories: `grep -r pattern directory/`
+
+_The input I put in chatGPT is "what are some ways to use grep function?"
+The output I got for this specific function from chatGPT says: "Search recursively in directories: `grep -r pattern directory/`_
 
 The -r option enables recursive searching. It searches for the pattern in all files within the specified directory and its subdirectories."
 
@@ -100,14 +74,16 @@ This input looks for the phrase "important to" from the same `911report` directo
 
 This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on [ChatGPT](https://chat.openai.com/))
 
-This commadn is useful when you wanted to find the word and be specific about its location or what comes before or after the word you are searching for.
+
+_The input I put in chatGPT is "what are some ways to use grep function?"
+The output I got for this specific function from chatGPT says: "Search for lines ending with a specific pattern: `grep -E "pattern$"` This command searches for lines that end with the specified pattern. The $ character represents the end of a line in regular expressions."_
+
+This command is useful when you wanted to find the word and be specific about its location or what comes before or after the word you are searching for.
 
 **First example** 
 
 The command has a `$` at the end of the string indicating that it is looking for sentences with the word "Air" at the end of the line. To look for lines with the word "Air" in the beginning of the sentence, we need to us a `^` at the beginning of the string. 
 
-The input I put in chatGPT is "what are some ways to use grep function?"
-The output I got for this specific function from chatGPT says: "Search for lines ending with a specific pattern: `grep -E "pattern$"` This command searches for lines that end with the specified pattern. The $ character represents the end of a line in regular expressions."
 
 *Input:* `grep -E "Air$" chapter-13.2.txt`
 
@@ -130,8 +106,8 @@ This example uses the command to find all the lines with "time" at the end and o
 
 This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on [ChatGPT](https://chat.openai.com/))
 
-The input I put in chatGPT is "what are some ways to use grep function?"
-The output I got for this specific function from chatGPT says: "Count the number of matching lines:`grep -c pattern file.txt` The -c option counts the number of lines that match the pattern instead of displaying the lines themselves."
+_The input I put in chatGPT is "what are some ways to use grep function?"
+The output I got for this specific function from chatGPT says: "Count the number of matching lines:`grep -c pattern file.txt` The -c option counts the number of lines that match the pattern instead of displaying the lines themselves."_
 
 This command is useful becasue it counts how many times a word show up in the articles without having you counting from the output and possibly make mistakes when counting.
 
