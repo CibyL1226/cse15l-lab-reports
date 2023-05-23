@@ -10,7 +10,7 @@ In this lab report I am going to demonstrate and show the keys I pressed to make
 
 ## Step 5
 
-**key pressed:** Then I typed `git clone` and `<tab> follow by `git@github.com:CibyL1226/lab7.git` I copied and pasted using `<ctrl + c> <ctrl + v>`, and I ran it using `<return>`. After I cloned it. I used `ls` to make sure it was cloned to the repository. Then I used `<down><down>` to move the cursor down for the new command.
+**key pressed:** Then I typed `git clone` and `<tab>` follow by `git@github.com:CibyL1226/lab7.git` I copied and pasted using `<ctrl + c> <ctrl + v>`, and I ran it using `<return>`. After I cloned it, I used `ls` to make sure it was cloned to the repository. Then I used `<down><down>` to move the cursor down for the new command.
   
 ![image](clone_lab7.png)
   
