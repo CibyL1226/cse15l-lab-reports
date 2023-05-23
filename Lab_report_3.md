@@ -4,7 +4,7 @@ The `grep ` command is usually used to find out information about a certain stri
 
 ## First Method
 
-**`grep -w <word> <file.txt>`** to find and output all the sentences containing the whole word instead of parts of the word.(Found on [ChatGPT](https://chat.openai.com/))
+**`grep -w <word> <file.txt>`** to find and output all the sentences containing the whole word instead of parts of the word.(Found on [ChatGPT](https://chat.openai.com/)). **This command is useful when you wanted to eliminate words that don't match exactly the word you are searching for to avoid confusion.**
 
 
 _The input I put in chatGPT is "what are some ways to use grep function??"_
@@ -16,7 +16,7 @@ The -w option ensures that the pattern is matched only as a whole word, ignoring
 
 This commmand is useful when you wanted to find information using a keyword or find quotes with a certain word, but you also wanted to eliminate other words that contains the word your looking for and make sure the return sentences contians exactly the word you're looking for.  
 
-*Input:* `grep -w recall chapter-1.txt`
+*Input:* `grep -w recall chapter-1.txt` (the "-w" here signifies "word")
 
 *Output:*
 ` When the local civil aviation security office of the Federal Aviation Administration (FAA) later investigated these security screening operations, the screeners recalled nothing out of the ordinary. They could not recall that any of the passengers they screened were CAPPS selectees. We asked a screening expert to review the videotape of the hand-wanding, and he found the quality of the screener's work to have been "marginal at best." The screener should have "resolved" what set off the alarm; and in the case of both Moqed and Hazmi, it was clear that he did not.
@@ -32,7 +32,8 @@ This command looks for every sentence that contains the word "unlikely" but not 
  
 ## Second Method
 
-Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively. (Found on [ChatGPT](https://chat.openai.com/))
+Another way to use incorporate the `grep` command is to use the `-r` command after `grep` to search for a string from all the files in a directory recursively. (Found on [ChatGPT](https://chat.openai.com/))  **This command is very useful if you wanted to go through the entire directory without having to type out and serach through each file out one by one. This method can save a lot of time and preven errors.**
+
 
 
 _The input I put in chatGPT is "what are some ways to use grep function?"
@@ -40,11 +41,10 @@ The output I got for this specific function from chatGPT says: "Search recursive
 
 The -r option enables recursive searching. It searches for the pattern in all files within the specified directory and its subdirectories."
 
-This command is very useful you wanted to go through the entire directory without having to type out each file out one by one. 
 
 **First example** looks for the string "takeoff" from every files in the same `911report` directory and return them.
  
-*Input:* `grep -r "takeoff" ~/Documents/GitHub/docsearch/technical/911report`
+*Input:* `grep -r "takeoff" ~/Documents/GitHub/docsearch/technical/911report` (the -r here signifies "recursive" search with in a directory, it can prevent errors and save time when you wanted to explore a pattern within a directory)
 
 *Output:* 
 `/Users/cibylin/Documents/GitHub/docsearch/technical/911report/chapter-13.2.txt:                after takeoff,"like someone keyed the mike and said everyone stay in your seats."
@@ -72,20 +72,19 @@ This input looks for the phrase "important to" from the same `911report` directo
 
 ## Third Method
 
-This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on [ChatGPT](https://chat.openai.com/))
+This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on [ChatGPT](https://chat.openai.com/)) **This command is useful when you wanted to find the word and be specific about its location or what comes before or after the word you are searching for.**
 
 
 _The input I put in chatGPT is "what are some ways to use grep function?"
 The output I got for this specific function from chatGPT says: "Search for lines ending with a specific pattern: `grep -E "pattern$"` This command searches for lines that end with the specified pattern. The $ character represents the end of a line in regular expressions."_
 
-This command is useful when you wanted to find the word and be specific about its location or what comes before or after the word you are searching for.
 
 **First example** 
 
 The command has a `$` at the end of the string indicating that it is looking for sentences with the word "Air" at the end of the line. To look for lines with the word "Air" in the beginning of the sentence, we need to us a `^` at the beginning of the string. 
 
 
-*Input:* `grep -E "Air$" chapter-13.2.txt`
+*Input:* `grep -E "Air$" chapter-13.2.txt` ("-E" here signifies "extension", becasue it allows an extended search of a regular expression)
 
 *Output:* `Accounting Office; INS-Immigration and Naturalization Service; NEADS-Northeast Air
             7. See Air Transport Association/Regional Airlines Association (ATA/RAA) report, "Air
@@ -104,18 +103,18 @@ This example uses the command to find all the lines with "time" at the end and o
 
 ## Fourth Method
 
-This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on [ChatGPT](https://chat.openai.com/))
+This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on [ChatGPT](https://chat.openai.com/)) **This command is useful becasue it counts how many times a word show up in the articles without having you counting from the output and possibly make mistakes when counting.**
 
 _The input I put in chatGPT is "what are some ways to use grep function?"
 The output I got for this specific function from chatGPT says: "Count the number of matching lines:`grep -c pattern file.txt` The -c option counts the number of lines that match the pattern instead of displaying the lines themselves."_
 
-This command is useful becasue it counts how many times a word show up in the articles without having you counting from the output and possibly make mistakes when counting.
+
 
 **Fist example**
 
 This input is looking for the string "brain" and the output tells us that the word appeared 9 times in the `pmed.0020060.txt` text file.
 
-*Input:* `grep -c "brain" pmed.0020060.txt`
+*Input:* `grep -c "brain" pmed.0020060.txt` ("-c" here stands for "count" because the command returns the count of the string you serached up)
 
 *Ouput:* `9`
 
