@@ -29,14 +29,18 @@ In this lab report I am going to demonstrate and show the keys I pressed to make
  
 ## Step 8
 
-**key pressed:** 
+**key pressed:** To make sure the changes fix the error. I ran the test again with command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java` by `<up><up> + <return>` because the same command was used two up in the history.
+
 ![image](TestWork.png)
   
 ## Step 9
-**key pressed:**
+**key pressed:** I pressed `<up><up><up>` to get `vim ListExamples.java` and `<return>` to run it again. Then typed in the command `git add ListExamples.java + <return>` to add it to git. Then `git commit -m "ListExamples edited"` and `<return>` to commit. I tried to assign the ssh to origin `git remote add origin git@github.com:CibyL1226/lab7.git` and `<return>` but it already existed so I typed in `git push origin main` to push the changes to main branch in Github. 
+
 ![image](push_commit.png)
 
  
 
 ## Result 
+I moved to the `lab7` repository on Github in the webbrowser and `<left click>` on the `ListExamples.java` file and made sure the changes are updated to this repository.
+
 ![image](repo_changed.png)
