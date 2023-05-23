@@ -7,10 +7,10 @@ The `grep ` command is usually used to find out information about a certain stri
 **`grep -w <word> <file.txt>`** to find and output all the sentences containing the whole word instead of parts of the word.(Found on [ChatGPT](https://chat.openai.com/)). **This command is useful when you wanted to eliminate words that don't match exactly the word you are searching for to avoid confusion.**
 
 
-_The input I put in chatGPT is "what are some ways to use grep function??"_
-_The output I got for this specific command from chatGPT says: "Search for whole word matches (using -w option):
+_The input I put in chatGPT is `what are some ways to use grep function?`_
+_The output I got for this specific command from chatGPT says: `Search for whole word matches (using -w option):
 `grep -w word file.txt`
-The -w option ensures that the pattern is matched only as a whole word, ignoring partial matches within larger words."_
+The -w option ensures that the pattern is matched only as a whole word, ignoring partial matches within larger words.`_
 
 **First example** shows all the sentences contianing the word "recall" from the `chapter-1.txt` file from the 911report directory. The input includes the `grep -w` command and the string we are looking for as well as the file we are looking in.
 
@@ -36,8 +36,8 @@ Another way to use incorporate the `grep` command is to use the `-r` command aft
 
 
 
-_The input I put in chatGPT is "what are some ways to use grep function?"
-The output I got for this specific function from chatGPT says: "Search recursively in directories: `grep -r pattern directory/`_
+_The input I put in chatGPT is `what are some ways to use grep function?`
+The output I got for this specific function from chatGPT says: `Search recursively in directories: `grep -r pattern directory/`_
 
 The -r option enables recursive searching. It searches for the pattern in all files within the specified directory and its subdirectories."
 
@@ -75,8 +75,8 @@ This input looks for the phrase "important to" from the same `911report` directo
 This method used `grep` followed by `-E` to find a pattern from the file indicated and return the lines containing the pattern. (Found on [ChatGPT](https://chat.openai.com/)) **This command is useful when you wanted to find the word and be specific about its location or what comes before or after the word you are searching for.**
 
 
-_The input I put in chatGPT is "what are some ways to use grep function?"
-The output I got for this specific function from chatGPT says: "Search for lines ending with a specific pattern: `grep -E "pattern$"` This command searches for lines that end with the specified pattern. The $ character represents the end of a line in regular expressions."_
+_The input I put in chatGPT is `what are some ways to use grep function?`
+The output I got for this specific function from chatGPT says: `Search for lines ending with a specific pattern: grep -E "pattern$" This command searches for lines that end with the specified pattern. The $ character represents the end of a line in regular expressions.`_
 
 
 **First example** 
@@ -105,8 +105,8 @@ This example uses the command to find all the lines with "time" at the end and o
 
 This method uses the `grep` command with `-c`, which stands for count. This command counts and return how many of the indicated strings is in the files after finding them. (Found on [ChatGPT](https://chat.openai.com/)) **This command is useful becasue it counts how many times a word show up in the articles without having you counting from the output and possibly make mistakes when counting.**
 
-_The input I put in chatGPT is "what are some ways to use grep function?"
-The output I got for this specific function from chatGPT says: "Count the number of matching lines:`grep -c pattern file.txt` The -c option counts the number of lines that match the pattern instead of displaying the lines themselves."_
+_The input I put in chatGPT is `what are some ways to use grep function?`
+The output I got for this specific function from chatGPT says: `Count the number of matching lines:grep -c pattern file.txt. The -c option counts the number of lines that match the pattern instead of displaying the lines themselves.`_
 
 
 
