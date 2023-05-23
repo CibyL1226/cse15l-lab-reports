@@ -8,7 +8,7 @@ The `grep ` command is usually used to find out information about a certain stri
 
 
 _The input I put in chatGPT is "what are some ways to use grep function??"_
-The output I got for this specific command from chatGPT says: "Search for whole word matches (using -w option):
+_The output I got for this specific command from chatGPT says: "Search for whole word matches (using -w option):
 `grep -w word file.txt`
 The -w option ensures that the pattern is matched only as a whole word, ignoring partial matches within larger words."_
 
