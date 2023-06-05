@@ -1,5 +1,10 @@
 # Lab Report 4
 In this lab report I am going to demonstrate and show the keys I pressed to make changes and update it to its Github repository all by commands in the terminal
+
+**Keys and their functions:**
+In this case `<tab>` leaves an extra space between two strings. `<ctrl + c> and <ctrl + v>` copy and paste selected strings. `<return>` actually runs the command you input. `<down>` key moves the cursor down one line.
+
+
 ## Step 4
 
 **key pressed:** after typing in the command `ssh cil002@ieng6.ucsd.edu` to log into my ieng6 machine I pressed `<return>` to ran it. 
@@ -10,7 +15,9 @@ In this lab report I am going to demonstrate and show the keys I pressed to make
 
 ## Step 5
 
-**key pressed:** Then I typed `git clone` and `<tab>` follow by `git@github.com:CibyL1226/lab7.git` I copied and pasted using `<ctrl + c> <ctrl + v>`, and I ran it using `<return>`. After I cloned it, I used `ls` to make sure it was cloned to the repository. Then I used `<down><down>` to move the cursor down for the new command.
+**key pressed:** Then I typed `git clone` and `<tab>` follow by `git@github.com:CibyL1226/lab7.git` I copied and pasted using `<ctrl + c> <ctrl + v>`, and I ran it using `<return>`. After I cloned it, I used `ls` to make sure it was cloned to the repository. Then I used `<down> or <up>` to move the cursor down and up for the new command. In the bash script, key `<j>` moves the cursor down one line. `<l>` moves the cursor to right along the line. The `<return>` key also runs the command in bash script.
+
+
   
 ![image](clone_lab7.png)
   
