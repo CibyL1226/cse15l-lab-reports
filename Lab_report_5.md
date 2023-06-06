@@ -17,3 +17,4 @@ The edits I did to fixed the bugs were to log into the local server with `ieng6`
 
 
 ## Part II - Reflection
+From the lab sections I learned how to run and manipulate web browser output from remote server. I also learned how to navigate through github, which I had no idea how to on my own and wasted a lot of time on trying to figure out all the functions. It was also really helpful to learn how to use bash scripts. I enjoyed learning about the theories behind Gradescope and had a chance to run and create the codes behind these functions we used on a day-to-day basis. Thank you!
